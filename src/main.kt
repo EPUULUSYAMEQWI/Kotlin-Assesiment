@@ -1,25 +1,29 @@
 fun main() {
-    println(y)
-var x=parameter(name:"lucy",age:"21")
+    name()
+    var x=parameter("Amekwi", 21)
     println(x)
-    println("length")
-    count()
-
+    var name1=country("Tanzania")
+    println(name1.count())
+    var result=getRemainder(5,2)
+    println(result)
 
 
 }
 
-fun name( "CodeHive":String){
-    var y = ("name[5],.toString [6], name[7] ,name[8]")
-    return y
-}
-fun parameter=(name:String,age:Int):String{
-    var x = ("Hi my name is $name and I am "$age years old")
-    return(x)
-}
+fun name() {
+  var name="CodeHive"
+    var y=name[4].toString()+name[5]+name[6]+name[7]
+    println (y)
 
-fun name(name:String):Int{
-    var z=("kenya")
-    return(name.count())
+}
+fun parameter (name:String, age:Int){
+        println("Hi, my name is $name and i am $age years old")
+}
+fun country(name1:String):String{
+    return name1
+}
+fun getRemainder(num1:Int,num2:Int):Int{
+    var modulus= num1 % num2
+    return modulus
 
 }
